@@ -1,41 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400&display=swap');
 $color-gray:#666;
 $color-white:#e9e9e9;
+$color-black:#252525;
+$text-shadow:0 2px 5px rgba(0,0,0,0.45);
+$box-shadow:0 5px 10px rgba(0.0,0,0.5); 
+ 
 
 
 *{
     margin: 0;
     padding: 0;
     font-family:微軟正黑;
-
-
+    box-sizing: border-box;
 }
 nav{
     display: grid;
-    grid-template-columns:15% auto 20%;
-    text-align:center;
-    background:$color-gray;
-    padding: 20px;
-    color: $color-white;
+    grid-template-columns: 15% auto 20%;
+    text-align: center;
+    background:$color-white;
+    padding: 20px 0;
+    box-shadow: $box-shadow;
+    position: fixed;
+    z-index: 3 ;
+    width: 100%;
 
     #link{
         a{ 
-            color:$color-white;
+            color:$color-black;
             text-decoration: none;
-            padding: 0 30PX ;
+            font-size: 16px;
+            padding: 0 30px ;
             transition: 0.5s;
+            display: inline-block;
+            vertical-align: 10px;
 
             &:hover{
-                transform:scale(1,1);
+                color: $color-gray;
+                transform: scale(1,2);
             }
-         }
-    #social {
-        a img {
-        width: 10% ;}
         }
+    }     
+    #social {
+        a {
+            transition:0.3s ;
+            padding: 0 15px;
 
+            &:hover{ 
+                filter: invert(65%) sepia(0%) saturate(2628%) hue-rotate(143deg) brightness(107%) contrast(86%);filter: invert(65%) sepia(0%) saturate(2628%) hue-rotate(143deg) brightness(107%) contrast(86%);
+            }
+            img {
+                width:20px;
+                vertical-align: -20px;
+            }
+        }    
     }
+}
 
-
-    }
-
+h1         
 
