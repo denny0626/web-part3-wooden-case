@@ -10,16 +10,16 @@ $box-shadow:0 5px 10px rgba(0.0,0,0.5);
 *{
     margin: 0;
     padding: 0;
-    font-family:微軟正黑;
+    font-family:微軟正黑;   
     box-sizing: border-box;
 }
 nav{
     display: grid;
-    grid-template-columns: 15% auto 20%;
+    grid-template-columns: 15% auto 15%;
     text-align: center;
     background:$color-white;
-    padding: 20px 0;
     box-shadow: $box-shadow;
+    padding: 20px 0;
     position: fixed;
     z-index: 3 ;
     width: 100%;
